@@ -1,0 +1,8 @@
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\bin\Debug\netcoreapp3.1\StandardLibrary.deps.json
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\bin\Debug\netcoreapp3.1\StandardLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\bin\Debug\netcoreapp3.1\StandardLibrary.pdb
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\obj\Debug\netcoreapp3.1\StandardLibrary.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\obj\Debug\netcoreapp3.1\StandardLibrary.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\obj\Debug\netcoreapp3.1\StandardLibrary.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\obj\Debug\netcoreapp3.1\StandardLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\StandardLibrary\obj\Debug\netcoreapp3.1\StandardLibrary.pdb

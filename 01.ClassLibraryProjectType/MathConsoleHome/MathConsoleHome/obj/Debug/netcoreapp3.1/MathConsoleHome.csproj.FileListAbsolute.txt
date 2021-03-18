@@ -1,0 +1,16 @@
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.exe
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.deps.json
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.runtimeconfig.json
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.runtimeconfig.dev.json
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\MathConsoleHome.pdb
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\StandardLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\bin\Debug\netcoreapp3.1\StandardLibrary.pdb
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.pdb
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes-Homework\01.ClassLibraryProjectType\MathConsoleHome\MathConsoleHome\obj\Debug\netcoreapp3.1\MathConsoleHome.genruntimeconfig.cache
