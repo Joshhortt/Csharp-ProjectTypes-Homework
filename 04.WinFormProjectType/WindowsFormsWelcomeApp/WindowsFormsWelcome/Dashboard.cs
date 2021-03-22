@@ -19,7 +19,7 @@ namespace WindowsFormsWelcome
 
 		private void btnSubmit_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Hi " + ' ' + txtFirstName.Text + ' ' + txtLastName.Text + ' ' +
+			MessageBox.Show("Hi" + ' ' + txtFirstName.Text + ' ' + txtLastName.Text + ' ' +
 
 			"Welcome to the Windows World", "Welcome", MessageBoxButtons.OKCancel,
 
