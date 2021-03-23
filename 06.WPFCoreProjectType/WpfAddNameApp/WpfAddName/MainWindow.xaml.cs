@@ -23,20 +23,17 @@ namespace WpfAddName
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		private int clickedTimes;
-
+		private string name = "";
 		public MainWindow()
 		{
 			InitializeComponent();
-			
-			clickedTimes = 0;
 		}
 
-		private void MainButton_Click(object sender, RoutedEventArgs e)
+		private void NameInputbutton_Click(object sender, RoutedEventArgs e)
 		{
-			clickedTimes++;
+			name = MainTextBox.Text;
 
-			MainLabel.Text = "You clicked the button " + clickedTimes + " Times";
+			NameLabel.Content = $"Hi, {name} welcome!";
 		}
 	}
 }

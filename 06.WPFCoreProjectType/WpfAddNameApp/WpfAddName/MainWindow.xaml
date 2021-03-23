@@ -5,19 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAddName"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="440">
-    <Grid>
+        Title="MainWindow" Height="400" Width="500">
+	<StackPanel>
 		<StackPanel>
-			<TextBlock x:Name="MainLabel"></TextBlock>
+			<Label 
+				Margin="10"
+				x:Name="EntryLabel" 
+				Content="Data-Entry" 
+				FontWeight="Bold"
+				FontSize="30"/>
+			
+			<Label 
+				Margin="10"
+				Padding="5"
+				x:Name="NameLabel" 
+				Content="" 
+				FontWeight="Light"
+				FontSize="20"/>
+
+			<TextBox
+			Margin="10"	
+			Padding="10"
+				FontSize="20"
+			x:Name="MainTextBox" 
+			Width="200" 
+			HorizontalAlignment="Left"/>
+			
 			<Button 
-				x:Name="MainButton" 
+				Margin="10" 
+				Padding="5"
+				x:Name="NameInputbutton" 
+				Content="Add Name" 
 				Width="100" 
-				HorizontalAlignment="Center"
-				Cursor="Hand"
-				Click="MainButton_Click">
-				Enter
-			</Button>
+				HorizontalAlignment="Left"
+				Click="NameInputbutton_Click"
+			/>
 		</StackPanel>
-		
-    </Grid>
+	</StackPanel>
 </Window>
