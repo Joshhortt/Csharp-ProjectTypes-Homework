@@ -1,4 +1,7 @@
 ﻿// HOMEWORK - 07 - Mini-Project - WPF ORDER FORM
+// Build a WPF application in .NET Core. Use one or more forms.
+// Try to implement user data-entry and some buttons that when clicked trigger events.
+// Try styling the UI the best you can.
 using System;
 using System.Collections.Generic;
 using System.Linq;
