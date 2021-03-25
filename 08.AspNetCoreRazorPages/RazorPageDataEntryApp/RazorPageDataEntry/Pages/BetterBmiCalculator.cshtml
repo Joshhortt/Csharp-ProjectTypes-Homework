@@ -1,0 +1,22 @@
+﻿@page
+@model RazorPageDataEntry.Pages.BetterBmiCalculatorModel
+@{ViewData["Title"] = "BetterBmiCalculator";}
+
+<h1>Better BMI Calculator</h1>
+
+<h2>@Model.ResultInfo</h2>
+
+<form method="post">
+	<div asp-validation-summary="All"></div>
+	<div>
+		<label asp-for="Weight"></label>
+		<input asp-for="Weight" /> kg
+	</div>
+	<div>
+		<label asp-for="Height"></label>
+		<input asp-for="Height" /> cm
+	</div>
+	<br />
+	<input type="submit" asp-page-handler="Calculate" value="Calculate" />
+	<input type="submit" asp-page-handler="Hot" value="Just tell me I am Hot!" />
+</form>
