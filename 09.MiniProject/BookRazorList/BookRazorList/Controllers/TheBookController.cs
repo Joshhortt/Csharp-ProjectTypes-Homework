@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace BookRazorList.Controllers
 {
-	[Route("api/[Controller]")] // 72. add route
-	[ApiController]          // 73. Api
+    [Route("api/[Controller]")] // 72. add route
+    [ApiController]          // 73. Api
     public class BookController : Controller
     {
         private readonly ApplicationDbContext _db;  // 74.
@@ -24,6 +24,21 @@ namespace BookRazorList.Controllers
         public async Task<IActionResult> GetAll()  // 78.
         {
             return Json(new { data = await _db.TheBook.ToListAsync() }); // 79.
+        }
+
+
+        [HttpDelete]  // 83.
+        public async Task<IActionResult> Delete(int id)  // 84.
+        {
+            var bookFromDb = await _db.TheBook.FirstOrDefaultAsync(u => u.Id == id);  // 85.
+            if (bookFromDb == null)  // 86.
+            {
+                return Json(new { success = false, message = "Error while Deleting" });  // 87.
+            }
+
+            _db.TheBook.Remove(bookFromDb);  // 88.
+            await _db.SaveChangesAsync();   // 89.
+            return Json(new { success = true, message = "Delete successful" });  // 89.
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿/*80. implement data tables after creating new item js file in wwwroot/js*/
+﻿/*82. implement data tables after creating new item js file in wwwroot/js*/
 var dataTable;
 
 $(document).ready(function () {
