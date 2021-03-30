@@ -17,12 +17,14 @@ namespace BookRazorList.Pages.TheBookList
             _db = db;  // 43.
         }
 
-        [BindProperty]
-        public TheBook TheBook { get; set; }
+        [BindProperty]  // 47. 
+        public TheBook TheBook { get; set; }  // 44 .
 
-        public async Task OnGet(int id)
+        public async Task OnGet(int id)  // 45.
         {
-            TheBook = await _db.TheBook.FindAsync(id);
+            TheBook = await _db.TheBook.FindAsync(id);  // 46.
         }
     }
 }
+
+

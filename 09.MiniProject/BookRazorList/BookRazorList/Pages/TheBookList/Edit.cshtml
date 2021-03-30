@@ -1,4 +1,50 @@
 ﻿@page
 @model BookRazorList.Pages.TheBookList.EditModel
-@{
+@*48. Implement designing TheBook Edit page.*@
+<br />
+<h2 class="text-info">Edit Book</h2>
+<br />
+<div class="border container" style="padding:30px;">
+	<form method="post">
+		<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="TheBook.Name"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="TheBook.Name" class="form-control" />
+			</div>
+			<span asp-validation-for="TheBook.Name" class="text-danger"></span>
+		</div>
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="TheBook.Author"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="TheBook.Author" class="form-control" />
+			</div>
+			<span asp-validation-for="TheBook.Author" class="text-danger"></span>
+		</div>
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="TheBook.ISBN"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="TheBook.ISBN" class="form-control" />
+			</div>
+			<span asp-validation-for="TheBook.ISBN" class="text-danger"></span>
+		</div>
+		<div class="form-group row">
+			<div class="col-3 offset-3">
+				<input type="submit" value="Update" class="btn btn-primary form-control" />
+			</div>
+			<div class="col-3">
+				<a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+@section Scripts{   @*49.*@
+<partial name="_ValidationScriptsPartial" />  @*50 .*@
 }
