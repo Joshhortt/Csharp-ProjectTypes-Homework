@@ -14,7 +14,7 @@ namespace BookRazorList.Pages.TheBookList
         // include dependency injection
         private readonly ApplicationDbContext _db;  // 12.  add ApplicationDbContext to using BookRazorList.Model;
 
-        public IndexModel(ApplicationDbContext db)  // 13.  add ApplicationDbContext to using BookRazorList.Model;
+        public IndexModel(ApplicationDbContext db)  // 13. Constructor -->  add ApplicationDbContext to using BookRazorList.Model;
         {
             _db = db;  // 14.
 		}

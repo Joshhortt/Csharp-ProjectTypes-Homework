@@ -15,5 +15,6 @@ namespace BookRazorList.Model
 		public string Name { get; set; }  // 5.
 		public string Author { get; set; }  // 6.
 
+		public string ISBN { get; set; }  // 26. Add a new property. Since ther was a new change here you have to add a new migration.
 	}
 }
