@@ -26,6 +26,7 @@ namespace BookRazorList.Pages.TheBookList
             TheBooks = await _db.TheBook.ToListAsync();  // 16. add await _db.TheBook.ToListAsync() --  using Microsoft.EntityFrameworkCore;
         }
 
+        // Implement OnPostDelete handler
         public async Task<IActionResult> OnPostDelete(int id)  // 61. 
         {
             var theBook = await _db.TheBook.FindAsync(id);  // 62.

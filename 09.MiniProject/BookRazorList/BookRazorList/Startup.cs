@@ -26,7 +26,10 @@ namespace BookRazorList
 		public void ConfigureServices(IServiceCollection services)
 		{
 			// 11. include EntityFramework configuration Pipleline
-			services.AddDbContext<ApplicationDbContext>(option=> option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));  
+			services.AddDbContext<ApplicationDbContext>(option=> option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+			services.AddControllersWithViews();  // 70. Add this after creating Api Controller
+
 			services.AddRazorPages().AddRazorRuntimeCompilation();  // 1. After installing Nuget Package add 'AddRazorRuntimeCompilation();
 		}
 
@@ -53,6 +56,7 @@ namespace BookRazorList
 
 			app.UseEndpoints(endpoints =>
 			{
+				endpoints.MapControllers();  // 71. This way the controller Api wil be called
 				endpoints.MapRazorPages();
 			});
 		}
