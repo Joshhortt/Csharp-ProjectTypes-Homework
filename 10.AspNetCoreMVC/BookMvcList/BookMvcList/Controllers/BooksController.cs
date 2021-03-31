@@ -24,24 +24,46 @@ namespace BookMvcList.Controllers
 			return View();
 		}
 
-        public IActionResult Upsert(int? id)  // 31. Copy paste Action method Index and rename Upsert, include parameters.
+        public IActionResult Upsert(int? id)  // 31. Copy/paste Action method Index and rename Upsert, include parameters.
         {
-            Book = new TheBook();  // 32. new book instance
-            if (id == null)    // 33. Initialize condition create 
+            Book = new TheBook();  // 32. Create new book instance.
+            if (id == null)    // 33. Initialize condition create.
             {
-                // 34. if null create
+                // 34. If null create.
                 return View(Book);
             }
-            //35.if not than update (we need to retrieve the book from the db)
+            //35. If not than update (we need to retrieve the book from the db).
             Book = _db.Books.FirstOrDefault(u => u.Id == id);
 
-            if (Book == null)  // 36. Initialize condition update
+            if (Book == null)  // 36. Initialize condition update.
             {
-                // 37. if it is null than there's no book in the db
+                // 37. If it is null than there's no book in the db.
                 return NotFound();
             }
-            // 38. otherwise we return that book to the view regardless it was used for create or update.
+            // 38. Otherwise we return that book to the view, regardless it was used for create or update.
             return View(Book);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert()  // 52. Add the Upsert POST action method.
+        {
+            if (ModelState.IsValid)  // 53. If Model state is valid or not.
+            {
+                if (Book.Id == 0)  // 54. If id is equal to zero.
+                {
+                    //55. If so than it's a create, so we Add Book.
+                    _db.Books.Add(Book);
+                }
+                else  // 56. else it's an update.
+                {
+                    //57. Otherwise it's aN update, so we update Book.
+                    _db.Books.Update(Book);
+                }
+                _db.SaveChanges();  // 58. Once all is done, we need to push/save the changes.
+                return RedirectToAction("Index");  // 59. Redirects to the Index Action.
+            }
+            return View(Book);  // 60. Redirects to Index Action and loads all the books again.
         }
 
         #region API Calls  

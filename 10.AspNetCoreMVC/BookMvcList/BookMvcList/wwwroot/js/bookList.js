@@ -1,6 +1,6 @@
-﻿﻿/* 23. creating new item js file in wwwroot/js called bookList.js*/
-/* 24. copy paste from razor project. implement data tables after creating new item js file in wwwroot/js*/
-/* 25. Only change the url */
+﻿﻿/* 23. Creating new item js file in wwwroot/js called bookList.js*/
+/* 24. Copy paste from razor project. Implement data tables after creating new item - js file in wwwroot/js*/
+/* 25. Only change the url -- Line 13*/
 var dataTable;
 
 $(document).ready(function () {

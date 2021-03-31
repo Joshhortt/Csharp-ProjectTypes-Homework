@@ -8,8 +8,8 @@ namespace BookMvcList.Models
 {
 	public class TheBook
 	{
-        // 1. Create class TheBook in Models
-        // 2. Include these 4 properties with Data Annotations
+        // 1. Create class TheBook in Models.
+        // 2. Include these 4 properties with Data Annotations.
         [Key]
         public int Id { get; set; }
         [Required]

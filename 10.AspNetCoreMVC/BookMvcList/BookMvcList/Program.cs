@@ -1,5 +1,5 @@
-// HOMEWORK - 10 - ASP .NET Core MVC
-// Build a  ASP .NET Core MVC App Book List. 
+// HOMEWORK - 10 - ASP.NET Core MVC
+// Build a ASP .NET Core MVC App Book List. 
 // Implement CRUD operations.
 
 using Microsoft.AspNetCore.Hosting;
