@@ -12,7 +12,7 @@ namespace BookMvcList.Controllers
 	public class BooksController : Controller
 	{
         private readonly ApplicationDbContext _db;  // 19. 
-        [BindProperty]
+        [BindProperty]  // 30. Add Bindproperty
         public TheBook Book { get; set; }  // 20. Add property
         public BooksController(ApplicationDbContext db)  // 21. Add Constructor
         {
@@ -23,6 +23,26 @@ namespace BookMvcList.Controllers
 		{
 			return View();
 		}
+
+        public IActionResult Upsert(int? id)  // 31. Copy paste Action method Index and rename Upsert, include parameters.
+        {
+            Book = new TheBook();  // 32. new book instance
+            if (id == null)    // 33. Initialize condition create 
+            {
+                // 34. if null create
+                return View(Book);
+            }
+            //35.if not than update (we need to retrieve the book from the db)
+            Book = _db.Books.FirstOrDefault(u => u.Id == id);
+
+            if (Book == null)  // 36. Initialize condition update
+            {
+                // 37. if it is null than there's no book in the db
+                return NotFound();
+            }
+            // 38. otherwise we return that book to the view regardless it was used for create or update.
+            return View(Book);
+        }
 
         #region API Calls  
         // 18. Copy paste Api Calls form the Razor Application in here
