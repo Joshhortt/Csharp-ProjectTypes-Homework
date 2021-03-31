@@ -1,6 +1,8 @@
+using BookMvcList.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,7 +25,12 @@ namespace BookMvcList
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddControllersWithViews();
+			// 8. Add NuGet Package ...Core.SqlServer and add this integration.
+			services.AddDbContext<ApplicationDbContext>(
+				options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+				);
+			// 9. Add NuGet Package ...Razor.RuntimeCompilation and add this integration.
+			services.AddControllersWithViews().AddRazorRuntimeCompilation();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
