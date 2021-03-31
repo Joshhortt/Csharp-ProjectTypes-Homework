@@ -1,0 +1,69 @@
+﻿@*39. Add view to Upsert action View in BooksController.cs*@
+
+@*40. We define a model*@
+@model BookMvcList.Models.TheBook
+@*41. Add following UI html code with bootstrap classes and redirects.*@
+<br />
+@*42.Display edit book or create book based on the request. If id is null than it's a create request*@
+<h2 class="text-info">@(Model.Id!=0 ? "Edit" : "Create") Book</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+	@*43.method POST inside the BooksController*@
+	<form method="post">
+		@*44.Conditional if the id is not zero*@
+		@if (Model.Id != 0)
+		{
+			<input type="hidden" asp-for="Id" />
+		}
+		@*45.validations*@
+		<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+		@*46.Property Name*@
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="Name"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="Name" class="form-control" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+		</div>
+		@*47.Property Author*@
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="Author"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="Author" class="form-control" />
+				<span asp-validation-for="Author" class="text-danger"></span>
+			</div>
+		</div>
+		@*48.Property ISBN*@
+		<div class="form-group row">
+			<div class="col-3">
+				<label asp-for="ISBN"></label>
+			</div>
+			<div class="col-6">
+				<input asp-for="ISBN" class="form-control" />
+				<span asp-validation-for="ISBN" class="text-danger"></span>
+			</div>
+		</div>
+		@*49.Submit Button*@
+		<div class="form-group row">
+			<div class="col-3 offset-3">
+				<button type="submit" class="btn btn-primary form-control">
+					@(Model.Id != 0 ? "Update" : "Create")
+				</button>
+			</div>
+			@*50.Link to go back*@
+			<div class="col-3">
+				<a asp-action="Index" class="btn btn-success form-control">Back to List</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+@*51. Add ValidationSciptsPartial*@
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+}
