@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// 7. Create public Inteface
+// 8. Create public Inteface
 
 namespace BookShop.Data.Interfaces
 {
 	public interface IBookRepo
 	{
-		// 8. Add 
+		// 9. Add 
 		List<Book> GetAllBooks();
 		Book GetBook(int id);
 	}
