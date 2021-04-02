@@ -5,9 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
+// 1. Create new ValuescONTROLER
 namespace BookShop.Controllers
 {
+	// 2. Add Get method without parameters
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ValuesController : ControllerBase
@@ -19,29 +20,12 @@ namespace BookShop.Controllers
 			return new string[] { "value1", "value2", "value3", "value4" };
 		}
 
+		// 3. Add Get method with parameter id
 		// GET api/<ValuesController>/5
 		[HttpGet("{id}")]
 		public string Get(int id)
 		{
 			return "value" + id;
 		}
-
-		//// POST api/<ValuesController>
-		//[HttpPost]
-		//public void Post([FromBody] string value)
-		//{
-		//}
-
-		//// PUT api/<ValuesController>/5
-		//[HttpPut("{id}")]
-		//public void Put(int id, [FromBody] string value)
-		//{
-		//}
-
-		//// DELETE api/<ValuesController>/5
-		//[HttpDelete("{id}")]
-		//public void Delete(int id)
-		//{
-		//}
 	}
 }
