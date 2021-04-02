@@ -1,5 +1,5 @@
 // HOMEWORK - 12 - ASP.NET Core API
-// Build a ASP .NET Core API App Book Store/sHOP. 
+// Build a ASP .NET Core API App Book Store/Shop
 // Test the API with Postman.
 
 using Microsoft.AspNetCore.Hosting;
