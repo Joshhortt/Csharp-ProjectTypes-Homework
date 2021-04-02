@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 // 3. Add Book class to Models
 
-namespace BookShop.Models
+namespace BookShop.Data.Models
 {
-
 	public class Book
 	{
 		// 4. Add Properties
