@@ -34,7 +34,12 @@ namespace WebApiDotNet5.Controllers
 		//public Contact Get(int id)
 		public ActionResult<Contact> Get(int id)
 		{
-			return contacts.FirstOrDefault(c => c.Id == id);
+			Contact contact = contacts.FirstOrDefault(c => c.Id == id);
+			if(contact == null)
+			{
+				return NotFound();
+			}
+			return Ok(contact);
 		}
 
 		// POST api/<ContactController>
