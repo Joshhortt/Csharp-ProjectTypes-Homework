@@ -44,8 +44,11 @@ namespace WebApiDotNet5.Controllers
 
 		// POST api/<ContactController>
 		[HttpPost]
-		public void Post([FromBody] string value)
+		public ActionResult<IEnumerable<Contact>> Post(Contact newContact)
 		{
+			contacts.Add(newContact);
+
+			return contacts;
 		}
 
 		// PUT api/<ContactController>/5
