@@ -24,7 +24,7 @@ namespace WebApiDotNet5.Controllers
 
 		// GET: api/<ContactController>
 		[HttpGet]
-		public IEnumerable<Contact> Get()
+		public ActionResult<IEnumerable<Contact>> Get()
 		{
 			return contacts;
 		}
@@ -37,7 +37,7 @@ namespace WebApiDotNet5.Controllers
 			Contact contact = contacts.FirstOrDefault(c => c.Id == id);
 			if(contact == null)
 			{
-				return NotFound();
+				return NotFound(new { Message = "This Contact has not been found."});
 			}
 			return Ok(contact);
 		}
