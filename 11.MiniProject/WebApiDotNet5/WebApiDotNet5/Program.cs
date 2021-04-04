@@ -1,3 +1,7 @@
+// HOMEWORK - 11 - Mini-Project - ASP .NET Core API
+// Build a ASP .NET Core API App with a Get call and a Post call
+// Implement CRUD operations, later on.(optional)
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

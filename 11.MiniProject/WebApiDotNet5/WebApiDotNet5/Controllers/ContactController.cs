@@ -51,16 +51,16 @@ namespace WebApiDotNet5.Controllers
 			return contacts;
 		}
 
-		// PUT api/<ContactController>/5
-		[HttpPut("{id}")]
-		public void Put(int id, [FromBody] string value)
-		{
-		}
+		//// PUT api/<ContactController>/5
+		//[HttpPut("{id}")]
+		//public void Put(int id, [FromBody] string value)
+		//{
+		//}
 
-		// DELETE api/<ContactController>/5
-		[HttpDelete("{id}")]
-		public void Delete(int id)
-		{
-		}
+		//// DELETE api/<ContactController>/5
+		//[HttpDelete("{id}")]
+		//public void Delete(int id)
+		//{
+		//}
 	}
 }
