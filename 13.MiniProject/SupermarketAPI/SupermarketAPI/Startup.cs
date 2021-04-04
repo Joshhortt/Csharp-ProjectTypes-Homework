@@ -1,25 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SupermarketAPI.Controllers;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
 using SupermarketAPI.Domain.Repositories;
 using SupermarketAPI.Domain.Services;
 using SupermarketAPI.Persistence.Contexts;
 using SupermarketAPI.Persistence.Repositories;
 using SupermarketAPI.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace SupermarketAPI
+namespace Supermarket.API
 {
     public class Startup
     {
@@ -30,13 +22,12 @@ namespace SupermarketAPI
             Configuration = configuration;
         }
 
-		[Obsolete]
-		public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddDbContext<AppDbContext>(options => {
-				options.UseInMemoryDatabase("supermarket-api-in-memory");
+                options.UseInMemoryDatabase("supermarket-api-in-memory");
             });
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -56,7 +47,7 @@ namespace SupermarketAPI
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            //app.UseMvc();
         }
     }
 }
