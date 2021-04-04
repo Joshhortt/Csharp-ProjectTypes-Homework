@@ -17,7 +17,9 @@ namespace WebApiDotNet5.Controllers
 		private List<Contact> contacts = new List<Contact>
 		{
 			new Contact { Id = 1, FirstName = "Pedro", LastName = "Silva", NickName = "Pedra", Place = "Lisbon"},
-			new Contact { Id = 1, FirstName = "Sonia", LastName = "Costa", NickName = "Soninha", Place = "Beja"}
+			new Contact { Id = 2, FirstName = "Sonia", LastName = "Costa", NickName = "Soninha", Place = "Beja"},
+		    new Contact { Id = 3, FirstName = "Paulo", LastName = "Pereira", NickName = "Paulao", Place = "Porto"},
+			new Contact { Id = 4, FirstName = "Sandra", LastName = "Testa", NickName = "Sandrinha", Place = "Lagos"}
 		};
 
 		// GET: api/<ContactController>
@@ -29,9 +31,10 @@ namespace WebApiDotNet5.Controllers
 
 		// GET api/<ContactController>/5
 		[HttpGet("{id}")]
-		public string Get(int id)
+		//public Contact Get(int id)
+		public ActionResult<Contact> Get(int id)
 		{
-			return "value";
+			return contacts.FirstOrDefault(c => c.Id == id);
 		}
 
 		// POST api/<ContactController>
